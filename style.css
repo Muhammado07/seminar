@@ -1,0 +1,626 @@
+
+/* Designed By: Mohamed Ali 2023
+==================================
+======= Johnson Controls Arabia ==========
+==================================
+*/
+/* Main Fonts */
+@font-face {
+      font-family: "Maurea-BoldLf";
+      src: url("./fonts/Maurea-BoldLf.otf") format("opentype");
+      font-weight: bold;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: "Maurea-Light";
+      src: url("./fonts/Maurea-Light.otf") format("opentype");
+      font-weight: lighter;
+      font-style: normal;
+  }
+  ::selection {
+      background: #00539e;
+      color: #ffffff;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+* {
+      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
+      font-family: "Maurea-BoldLf";
+}
+.container {
+      width: 100%;
+      padding-right: 40px;
+      padding-left: 40px;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      max-width: 1440px !important;
+      margin: auto;
+    }
+/*--------------- hero section --------------- */
+
+.header {
+     background: url(./img/main-header.jpg) center center no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: 90vh;
+     position: relative;
+}
+.thank-you .header {
+      height: 100vh;
+}
+.header .main-info {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+.header .main-info .watch {
+      width: 200px;
+      height: 100%;
+      margin: 0 auto;
+}
+.header .main-info .sigma {
+      width: 300px;
+      height: 100%;
+      margin: 30px auto 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.header .main-info .sigma.epi img {
+      width: 200px;
+}
+.header .main-info h1,
+.header .main-info h2 {
+      color: #ffffff;
+}
+.header .main-info h1 {
+      font-size: 75px;
+      width: 75%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: "Maurea-BoldLf";
+      font-weight: 600;
+      margin-bottom: 0;
+      padding-bottom: 0;
+}
+.header .main-info h3 {
+      color: #ffffff;
+      width: 100%;
+      line-height: 1.4;
+      font-family: "Maurea-Light";
+      font-weight: 300;
+      margin-top: 30px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 18px;
+}
+.header .main-info h3 a {
+      color: #fff;
+      text-decoration: underline;
+}
+.header .count-imgs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin: 30px auto;
+}
+.header .count-imgs img {
+      width: 160px;
+      height: 100%;
+}
+.nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+@media(max-width: 991px) {
+      .header h1 {
+            font-size: 28px !important;
+            text-align: center;
+      }
+      .header .main-info .watch {
+            width: 150px;
+      }
+      .header .main-info .sigma {
+            width: 200px;
+      }
+      .header .main-info .sigma {
+            margin: 20px auto 10px;
+        }
+        .header .main-info h3 {
+            width: 100%;
+            font-size: 22px;
+        }
+        
+        .header .main-info .sigma h1 {
+            font-size: 40px !important;
+        }
+        .header .count-imgs img {
+            width: 100px
+        }
+        .header .header-info {
+            flex-direction: column;
+        }
+        .header .main-info h3 {
+            font-size: 18px;
+        }
+}
+
+/*--------------- navigation --------------- */
+
+.nav {
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      z-index: 2;
+      background-color: #ffffff;
+}
+
+.nav.scrolled {
+      background-color: #ffffff !important;
+      transition: background-color 500ms linear;
+}
+
+.nav #brand {
+      float: left;
+      display: block;
+}
+.nav #brand a  img{
+      width: 120px;
+}
+
+.nav #menu {
+      float: left;
+      right: 40px;
+      position: fixed;
+}
+
+@media(max-width: 991px) {
+      body {
+            overflow-x: hidden;
+      }
+
+      .nav {
+            height: 100px;
+      }
+      nav #brand {
+            margin-left: 10px;
+      }
+
+      .nav #brand a img{
+            width: 100px;
+      }
+}
+
+
+/*--------------- about section starts  --------------- */
+
+.content {
+      position: absolute;
+      width: 100%;
+}
+
+section {
+      padding: 70px 0 50px;
+      text-align: left;
+}
+
+.section-index {
+      color: #151515;
+      font-weight: bolder;
+      font-size: 20px;
+}
+
+.section-subheading {
+      color: #151515;
+      margin: 10px 0;
+}
+
+.section-info {
+      font-size: 24px;
+      color: #151515;
+      font-family: "Maurea-Light";
+      font-weight: 400;
+      margin: 0 auto;
+      text-align: left;
+}
+
+.more {
+      margin: 60px 0 40px;
+}
+.more:last-child {
+      margin-top: 30px;
+}
+#btn {
+      text-transform: uppercase !important;
+      font-size: 12px !important;
+      letter-spacing: 2px;
+      padding: 18px 36px;
+      font-family: "Maurea-BoldLf";
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+      background: #ffffff;
+      color: #00539e;
+      text-decoration: none;
+}
+#btn:hover {
+      opacity: 0.9;
+}
+.morey #btn {
+      background: #00539e;
+      color: #ffffff;
+}
+.main-video {
+      width: 700px;
+      height: 300px;
+      margin: 50px auto 100px;
+}
+.header .header-info,
+   .header .header-info .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+   .header .header-info {
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    width: fit-content;
+    margin: 0 auto;
+   }
+@media screen and (max-width: 991px) {
+      .main-video {
+            width: 100%;
+            height: 100%;
+            margin: 50px 0;
+      }
+      section {
+            padding: 50px 0 0;
+      }
+      .story h1 {
+            font-size: 28px;
+      }
+      .section-info {
+            font-size: 18px;
+      }
+}
+/*--------------- contact section starts here --------------- */
+
+#contact-form {
+      margin: 5% 0;
+}
+.contact {
+      padding: 50px 0;
+}
+
+.contact .icon-title {
+      margin-top: 10px;
+      color: #151515;
+      text-align: center;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+}
+.success {
+      text-align: center;
+}
+
+/*--------------- footer section starts here --------------- */
+
+.footer {
+      background: #fbfbfb;
+      padding: 20px;
+    }
+    .footer .footy {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer .footy p {
+      font-size: 14px;
+      text-align: center;
+      padding-bottom: 0 !important;
+      margin-bottom: 0 !important;
+      font-family: "Maurea-Light";
+    }
+
+#media ul {
+      list-style: none;
+}
+
+#media ul li {
+      display: inline-block;
+}
+.contact .formbox {
+      width: 80%;
+      margin: 0 auto;
+     }
+     .contact .formbox form {
+      width: 100%;
+     }
+     .contact .formbox form .input-box {
+      margin-bottom: 24px;
+      width: 100%;
+      text-align: left;
+     }
+     .contact .formbox form .input-box p {
+      font-size: 16px !important;
+      padding-bottom: 10px !important;
+      margin-bottom: 0 !important;
+      font-family: "Maurea-Light";
+      font-weight: 400;
+     }
+     .contact .formbox form .input-box span {
+      font-size: 12px;
+     }
+     .contact .formbox form .input-box input {
+      width: 100%;
+      margin-bottom: 0px;
+      padding: 10px 15px;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 4px;
+      border-color: #D2D2D2;
+      background-color: #ffffff;
+      outline: none;
+     }
+     input::-webkit-outer-spin-button,
+     input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+     }
+     .contact .formbox form .input-boxs {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+     .contact .formbox form .input-boxs input {
+      background: #00539e;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      border: none;
+      border-color: transparent;
+      outline: none;
+      padding: 16px 20px;
+      transition: 0.3s;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 50%;
+      transition: all 0.3s ease-in-out;
+      margin-top: 30px;
+     }
+     .contact .formbox form .input-boxs input:hover {
+      opacity: 0.9;
+     }
+     .contact .combin {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      grid-gap: 10px;
+    }
+    .contact #phone {
+      padding: 10px 50px;
+    }
+    .iti {
+      width: 100% !important;
+    }
+    #join-us {
+      scroll-margin-top: 100px;
+    }
+    .form-control {
+      height: 100% !important;
+      padding: 10px 15px !important;
+    }
+    .secind-par {
+      margin-top: 20px;
+    }
+    .secind-par ul li {
+      font-size: 22px;
+      color: #151515;
+      font-family: "Maurea-Light";
+      font-weight: 600;
+      margin: 0 auto;
+      margin-left: 15px;
+      text-align: left;
+    }
+
+    .team-member, .team-img {
+      position: relative;
+}
+
+.team-img {
+      background: #151515;
+      height: 340px;
+}
+
+.members {
+      margin: 20px 0 0;
+}
+
+.team-title {
+      margin: 20px 0;
+}
+
+.team-title h5 {
+      font-size: 24px;
+      font-family: "Maurea-BoldLf";
+}
+
+.team-title span {
+      font-size: 18px;
+      font-family: "Maurea-Light";
+}
+
+.team-member {
+      overflow: hidden;
+}
+
+.team-one {
+      background: url('./img/ahmed-al-hussain.png') no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.team-two {
+      background: url('./img/samih.png') no-repeat 50% 50%;
+      background-size: cover;
+}
+.thank-you .header .main-info {
+      height: 100vh;
+}
+.sigma .successy {
+      width: 200px !important;
+      height: 100%;
+}
+.thank-you .header .main-info h1 {
+      font-size: 32px;
+}
+.thank-you .header .main-info h3 {
+      width: 100%;
+      font-size: 18px;
+}
+.show-date {
+      width: 300px;
+      height: 100%;
+      margin: 0 auto;
+}
+.show-date img {
+      width: 100%;
+      height: 100%;
+}
+    @media screen and (max-width: 991px) {
+      .contact {
+            padding: 0 0 50px;
+      }
+      .team {
+            padding: 0 0 30px;
+      }
+      .team h1 {
+            font-size: 28px;
+      }
+      #join-us h1 {
+            font-size: 24px;
+      }
+      .contact .formbox {
+            width: 100%;
+      }
+      .contact .combin {
+            grid-template-columns: 1fr;
+      }
+      .contact .formbox form .input-box {
+            margin-bottom: 16px;
+      }
+      #join-us {
+            scroll-margin-top: 300px;
+          }
+          .success {
+            font-size: 16px;
+      }
+      .sigma .successy {
+            width: 100px !important;
+            height: 100%;
+      }
+      .show-date {
+            width: 220px;
+      }
+      .morey #btn {
+            font-size: 11px !important;
+            padding: 16px;
+      }
+      .header .main-info .sigma.epi img {
+            width: 160px;
+      }
+      .header .header-info {
+            align-items: flex-start;
+            text-align: left;
+        }
+        .header .main-info h3 {
+            text-align: left;
+        }
+        .header h1,
+        .header .main-info h1 {
+            font-size: 36px !important;
+            width: 100%;
+        }
+}
+
+@media screen and (max-width:376px) {
+      .header .main-info h2 {
+            font-size: 26px;
+        }
+        #btn {
+            padding: 18px 16px;
+        }
+        .nav {
+            height: 80px;
+      }
+
+      .nav #brand a img{
+            width: 60px;
+      }
+      .morey #btn {
+            font-size: 9px !important;
+            padding: 11px;
+      }
+      
+      .header .main-info h3 {
+            font-size: 18px;
+      }
+}
+@media screen and (max-width:322px) {
+      .header .main-info .sigma h1 {
+            font-size: 28px !important;
+      }
+      .header .main-info h2 {
+            font-size: 22px;
+        }
+        .header .main-info h3 {
+            font-size: 16px;
+        }
+        #btn {
+            padding: 18px 16px;
+        }
+        .header .main-info .sigma.epi img {
+            width: 100px;
+      }
+        
+}
+.we-support {
+      text-align: center;
+}
+.we-support h3 {
+      background-color: #00539e;
+      color: #ffffff;
+      padding: 20px 40px;
+      border-radius: 4px;
+      width: fit-content;
+      margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+      .we-support {
+            padding: 0 0 50px;
+      }
+      .we-support h3 {
+            padding: 15px 10px;
+            font-size: 18px;
+      }
+}
+@media screen and (max-width: 360px) {
+      .we-support h3 {
+            padding: 15px 10px;
+            font-size: 14px;
+      }
+}
